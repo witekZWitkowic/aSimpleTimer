@@ -1,0 +1,104 @@
+/* VARIABLES */
+
+:root {
+    /* NEON DARK MODE */
+    /* --primary: #0e937f;
+    --secondary: #1f95a0;
+    --main-bg-color: #010402; */
+    /* WINDOWS-LIKE */
+    --primary: #FFF;
+    --secondary: #8dadf8;
+    --main-bg-color: #060221;
+    /* CAMPING TIME */
+    /* --primary: #55bdca;
+    --secondary: #f27d47;
+    --main-bg-color: #022444; */
+    
+}
+
+/* GLOBALS */
+
+body {
+    background: var(--main-bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TIMER */
+
+.timer__main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.timer__main--container{
+    width: 420px;
+    height: 500px;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.timer__main--text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timer__main--heading{
+    color: var(--primary);
+    font-size: 82px;
+    margin: 0;
+}
+.timer__main--time{
+    color: var(--primary);
+    font-size: 52px;
+}
+.timer__main--buttons{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.timer__main--buttonContainer{
+    position: relative;
+}
+
+.timer__main--button{
+    width: 145px;
+    height: 45px;
+    font-size: 32px;
+    color: var(--main-bg-color);
+    cursor: pointer;
+    border: 2px solid var(--secondary);
+    border-radius: 30px;
+    background: var(--secondary); 
+}
+
+.timer__main--button::before{
+    transition: 0.3s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    border-radius: 30px;
+}
+.timer__main--button:hover::before{
+    transition: 0.3s all ease;
+    background-color: var(--main-bg-color);
+    z-index: -1;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 1;
+    border: 2px solid var(--secondary);
+}
+.timer__main--button:hover span{
+    position: relative;
+    color: var(--secondary);
+    z-index: 100;
+}

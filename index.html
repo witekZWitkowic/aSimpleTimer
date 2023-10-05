@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <section class="timer__main">
+        <div class="timer__main--container">
+            <div class="timer__main--text">
+                <h1 class="timer__main--heading">Timer</h1>
+                <span class="timer__main--time" id="time">
+                    00 : 00 : 00
+                </span>
+            </div>
+            <div class="timer__main--buttons">
+                <div class="timer__main--buttonContainer">
+                    <button class="timer__main--button" id="startPause">
+                        <span id="startPauseSpan">
+                            Start
+                        </span>
+                    </button>
+                </div>
+                <div class="timer__main--buttonContainer">
+                    <button class="timer__main--button" id="stop">
+                        <span>
+                            Stop
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
